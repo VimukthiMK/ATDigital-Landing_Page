@@ -1,8 +1,33 @@
 :root {
-  -moz-osx-font-smoothing: grayscale;
+  --primary-color:rgba(107, 60, 201, 1);
+  --secondary-color:rgba(242, 141, 53, 1);
+  --analogous-color-1:rgba(106, 68, 242, 1);
+  --analogous-color-2:rgba(28, 189, 221, 1);
+  --triadic-color-1:rgba(82, 55, 140, 1);
+  --dark-color-1:rgba(120, 191, 145, 1);
+  --dark-color-2:rgba(77, 202, 121, 1);
+  --text-color:rgba(47, 47, 47, 1);
+  --text-color-light:rgba(84, 90, 117, 1);
+  --text-color-subtle:rgba(156, 153, 145, 1);
+  --accent-color-1:rgba(226, 242, 254, 1);
+  --accent-color-2:rgba(255, 248, 224, 1);
+  --error-color:rgba(255, 3, 53, 1);
+  --sucess-color:rgba(94, 179, 11, 1);
+
 }
 
-body {
-  margin: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 

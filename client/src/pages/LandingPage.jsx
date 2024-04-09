@@ -1,10 +1,9 @@
-
+import TopNavigation from 'src/components/TopNavigation/TopNavigation'
 
 const LandingPage = () => {
+  
   return (
-    <div>
-      <p>this is landing page</p>
-    </div>
+    <TopNavigation/>
   )
 }
 
