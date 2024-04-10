@@ -30,7 +30,7 @@
 }
 
 .navigation {
-    width: 522px; /* Corrected typo */
+    max-width: 522px; /* Corrected typo */
     min-height: 141px;
     height: auto;
     opacity: 0px;
@@ -38,7 +38,7 @@
     position: relative;
     align-self: flex-end;
     display: flex;
-    gap: 128px;
+    gap: 100px;
 }
 
 .company img {

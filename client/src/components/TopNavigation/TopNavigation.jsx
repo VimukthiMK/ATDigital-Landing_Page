@@ -3,6 +3,7 @@ import 'src/components/TopNavigation/topnavigation.css'
 
 
 const TopNavigation = () => {
+
   return (
     <header>
       {/* navigation Bar */}
@@ -15,11 +16,15 @@ const TopNavigation = () => {
         <div className='navbar--navcontainer'>
           <ul className="nav-links">
             <li><a href="#service">SERVICES</a></li>
-            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#about">ABOUT US</a></li>                                                                            
             <li><a href="#contact">CONTACT US</a></li>
             <li><a href="#careers">CAREERS</a></li>
           </ul>
         </div>
+        <div className="hamburger-menu">
+          
+        </div>
+
       </div> 
     </header>
 

@@ -33,7 +33,7 @@ const LandingPage = () => {
       {/*Services Section*/}
       <section id='service' className='services'>
         {/* service 1 */}
-        <div className='service'>
+        <div className='service' id='service-1'>
           {/* iamge */}
           <div className='service--image' style={{ alignSelf: "flex-start", width: '414px' }}>
             <img src={Service1} alt="service-1-img" />
@@ -47,13 +47,13 @@ const LandingPage = () => {
               <p>Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which
                 tailor content and engagement methods to respond to different intents shown by your potential
                 customers who interact with your business online.</p>
-              <Button>LEARN MORE</Button>
+              <span className='button'><Button>LEARN MORE</Button></span>
             </div>
           </div>
         </div>
 
         {/* service 2 */}
-        <div className='service'>
+        <div className='service' id='service-2'>
           {/* content */}
           <div className='service--content' style={{ alignSelf: "flex-start", width: '650px' }}>
             <div>
@@ -63,7 +63,7 @@ const LandingPage = () => {
               <p>Your digital strategy should complement the overall marketing strategy of the company. In online marketing,
                 each component will never work in isolation and every business needs a different mix. We provide a clear concept
                 and strategic overview to find the most efficient model for your business.</p>
-              <Button>LEARN MORE</Button>
+              <span className='button'><Button>LEARN MORE</Button></span>
             </div>
           </div>
           {/* iamge */}
