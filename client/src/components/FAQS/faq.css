@@ -1,0 +1,50 @@
+.faqbutton-container{
+    gap: 13px;
+    display: flex;
+    flex-direction: column ;
+    margin: 2px, 4px;
+
+}
+.accordion {
+    background-color: rgba(250, 248, 255, 1);
+    height: 76px;
+    color: #000000;
+    cursor: pointer;
+    padding: 24px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    line-height: 28px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: var(--accent-color-1);
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+    color: #444;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    height: auto;
+    color:rgba(111, 108, 144, 1);
+    background-color: rgba(250, 248, 255, 1);
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  

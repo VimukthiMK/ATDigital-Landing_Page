@@ -1,11 +1,17 @@
 import TopNavigation from 'src/components/TopNavigation/TopNavigation'
 import 'src/pages/landingpage.css'
-import HeroImg from 'src/assets/images/hero-banner.svg'
+import HeroImg from 'src/assets/images/hero-banner.svg' 
 import Service1 from 'src/assets/images/service-01.svg'
 import Service2 from 'src/assets/images/service-02.svg'
-import Button from 'src/components/Button/Button'
+import Button from 'src/components/Button/Button'  //Button Component
+import Faq from 'src/components/FAQS/Faq'  //FAQ component
 
 const LandingPage = () => {
+  const sections = [
+    { title: 'Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?', content: 'Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.' },
+    { title: 'Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?', content: 'Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.' },
+    { title: 'Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?', content: 'Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.' }
+  ];
 
   return (
     <>
@@ -54,8 +60,8 @@ const LandingPage = () => {
                 Digital Strategy Consulting
               </span>
               <p>Your digital strategy should complement the overall marketing strategy of the company. In online marketing,
-                 each component will never work in isolation and every business needs a different mix. We provide a clear concept
-                  and strategic overview to find the most efficient model for your business.</p>
+                each component will never work in isolation and every business needs a different mix. We provide a clear concept
+                and strategic overview to find the most efficient model for your business.</p>
               <Button>LEARN MORE</Button>
             </div>
           </div>
@@ -63,9 +69,18 @@ const LandingPage = () => {
           <div className='service--image' style={{ alignSelf: "flex-end", width: '414px' }}>
             <img src={Service2} alt="service-2-img" />
           </div>
-
         </div>
+      </section>
 
+      {/* FAQ Section */}
+      <section className='faq' id='about'>
+        <div className='content'>
+        <span className='faq--header'>
+          Frequently asked questions
+      </span>
+      <Faq sections={sections} />
+        </div>
+    
       </section>
 
 

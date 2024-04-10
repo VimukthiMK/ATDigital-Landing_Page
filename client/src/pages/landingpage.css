@@ -98,7 +98,7 @@
 }
 
 .service--content span {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 27px;
     font-weight: 600;
     line-height: 33px;
@@ -121,6 +121,35 @@
 .service--image {
     height: 414px;
     display: flex;
+}
+
+
+/* FAQ */
+.faq{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.faq .content{
+    width: 896px;
+    max-height: 392px;
+    height: 392px;
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    flex-direction: column;
+   
+
+}
+
+.faq--header{
+    font-family: "Poppins", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: center;
+    color: var(--primary-color);
 }
 
 /* Responsive */
