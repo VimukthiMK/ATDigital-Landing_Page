@@ -1,6 +1,7 @@
 .navbar {
-    min-width: 1440px;
+    max-width: 1440px;
     height: auto;
+    width: auto;
     padding: 26px 80px;
     gap: 0px;
     justify-content: space-between;
@@ -56,7 +57,7 @@
   }
   
   @media (max-width: 375px) {
-    .navbar-navcontainer {
+    .navbar--navcontainer {
       display: none; 
     }
   
@@ -68,7 +69,7 @@
       height: 20px;
       cursor: pointer;
     }
-    .navbar-logocontainer {
+    .navbar--logocontainer {
       display: flex;
       height: 12 px;
       width: 12px;

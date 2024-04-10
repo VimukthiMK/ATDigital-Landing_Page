@@ -1,3 +1,4 @@
+/* hero styles */
 .hero {
     height: 88vh;
     width: auto;
@@ -31,9 +32,9 @@
     left: 80px;
     padding: 24px 40px 32px 40px;
     gap: 20px;
-    opacity: 0px;
     position: absolute;
-    color: white; /* Set text color */
+    color: white;
+    /* Set text color */
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
@@ -42,8 +43,6 @@
     background: linear-gradient(256.73deg, #1CBDDD 27.86%, #4DCA79 100%);
 }
 
-
-
 .hero--content span {
     font-size: 48px;
     display: block;
@@ -51,20 +50,93 @@
     line-height: 48px;
     letter-spacing: -0.02em;
     text-align: left;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
 }
+
+/* Service section */
+.services {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1064px;
+    height: 414px;
+}
+
+.service {
+    width: 90%; /* Shrink width */
+    max-width: 1064px;
+  }
+  .service--content,
+  .service--image {
+    width: 50%; /* Equal width for content and image */
+    max-width: 650px;
+    height: auto; /* Adjust height based on content */
+  }
+
+
+.service--content {
+    display: flex;
+    height: 414px;
+    align-items: center;
+}
+
+.service--content div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.service--content span {
+    font-family: Poppins;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: left;
+    color: var(--primary-color);
+
+
+}
+
+.service--content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+
+
+}
+
+.service--image {
+    height: 414px;
+    display: flex;
+}
+
+/* Responsive */
 
 @media (max-width: 1200px) {
     .hero--content {
-        left: 40px; 
-        width: auto; 
+        left: 40px;
+        width: auto;
         max-width: 80%;
     }
 }
 
 @media (max-width: 768px) {
     .hero--content {
-        position: static; /* Remove absolute positioning */
+        position: static;
+        /* Remove absolute positioning */
         width: 100vw;
     }
 
@@ -76,7 +148,24 @@
 
 @media (max-width: 375px) {
     .hero--content {
-        padding: 24px; /* Adjust padding for smaller screens */
+        padding: 24px;
+        /* Adjust padding for smaller screens */
     }
-}
 
+    .hero--content span {
+        font-size: 36px;
+
+    }
+    .service {
+        width: 100%; /* Full width */
+        max-width: 100%;
+        flex-direction: column; /* Align as column */
+      }
+      .service--content,
+      .service--image {
+        width: 100%; /* Full width */
+        max-width: 100%;
+        height: auto; /* Adjust height based on content */
+      }
+    
+}
