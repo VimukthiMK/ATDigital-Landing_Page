@@ -1,10 +1,11 @@
 import TopNavigation from 'src/components/TopNavigation/TopNavigation'
 import 'src/pages/landingpage.css'
-import HeroImg from 'src/assets/images/hero-banner.svg' 
+import HeroImg from 'src/assets/images/hero-banner.svg'
 import Service1 from 'src/assets/images/service-01.svg'
 import Service2 from 'src/assets/images/service-02.svg'
 import Button from 'src/components/Button/Button'  //Button Component
 import Faq from 'src/components/FAQS/Faq'  //FAQ component
+import Footer from 'src/components/Footer/Footer'
 
 const LandingPage = () => {
   const sections = [
@@ -19,7 +20,7 @@ const LandingPage = () => {
       <TopNavigation />
 
       {/* Hero Section */}
-      <section className='hero'>
+      <section className='hero' id='home'>
         <div className='hero--image'>
           <img src={HeroImg} alt="hero-img" />
         </div>
@@ -75,13 +76,15 @@ const LandingPage = () => {
       {/* FAQ Section */}
       <section className='faq' id='about'>
         <div className='content'>
-        <span className='faq--header'>
-          Frequently asked questions
-      </span>
-      <Faq sections={sections} />
+          <span className='faq--header'>
+            Frequently asked questions
+          </span>
+          <Faq sections={sections} />
         </div>
-    
       </section>
+
+      {/* Footer Section */}
+      <Footer/>
 
 
     </>

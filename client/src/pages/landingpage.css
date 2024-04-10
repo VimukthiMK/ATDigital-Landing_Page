@@ -78,9 +78,9 @@
   }
   .service--content,
   .service--image {
-    width: 50%; /* Equal width for content and image */
+    width: 50%; 
     max-width: 650px;
-    height: auto; /* Adjust height based on content */
+    height: auto; 
   }
 
 

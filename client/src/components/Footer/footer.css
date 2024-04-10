@@ -1,0 +1,134 @@
+.footer {
+    position: relative;
+    background-color: var(--primary-color);
+    height: 266px;
+    min-width: 1440px;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-nav {
+    position: relative;
+    width: 88%;
+    height: 141px;
+    justify-content: space-between;
+    display: flex;
+
+
+}
+
+.company {
+    display: flex;
+    position: relative;
+    width: 28%;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 20px;
+
+}
+
+.navigation {
+    width: 522ppx;
+    height: 141px;
+    opacity: 0px;
+    justify-content: space-between;
+    position: relative;
+    align-self: flex-end;
+    display: flex;
+    gap: 128px;
+
+}
+
+
+.company img {
+    position: relative;
+    width: 238.89px;
+    height: 36.11px;
+
+
+}
+
+
+.company p {
+    position: relative;
+    font-family: "Lato", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+
+}
+
+
+.navigation nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.head {
+    position: relative;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25.41px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.navlist ul {
+    position: relative;
+    line-height: 1.5;
+}
+
+.navlist li {
+    position: relative;
+    list-style: none;
+
+}
+
+.navlist a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navlist a:hover {
+    text-decoration: underline;
+    color: var(--text-color-subtle);
+    transform: 0.2s ease;
+}
+
+.bottom-footer {
+    position: relative;
+    width: 630px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(255, 255, 255)
+}
+
+.bottom-footer div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bottom-footer div a,
+.bottom-footer div p {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.bottom-footer div a:hover{
+    text-decoration: underline;
+    color: var(--text-color-subtle);
+}
