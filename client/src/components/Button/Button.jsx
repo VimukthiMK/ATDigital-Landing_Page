@@ -1,7 +1,8 @@
 import 'src/components/Button/button.css'
 
-export default function Button({ children }) {
+ const Button = ({ children }) => {
     return <button className='btn'>
         {children}
-    </button>;
+    </button>
   }
+  export default Button
