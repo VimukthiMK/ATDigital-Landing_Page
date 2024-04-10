@@ -5,10 +5,13 @@ import 'src/components/TopNavigation/topnavigation.css'
 const TopNavigation = () => {
   return (
     <header>
+      {/* navigation Bar */}
       <div className='navbar'>
+        {/* Logo */}
         <div className='navbar--logocontainer'>
-          <img src={Logo} alt="app-logo" />
+          <a href="#home"><img src={Logo} alt="app-logo" /></a>
         </div>
+        {/* navigation */}
         <div className='navbar--navcontainer'>
           <ul className="nav-links">
             <li><a href="#service">SERVICES</a></li>
@@ -17,12 +20,6 @@ const TopNavigation = () => {
             <li><a href="#careers">CAREERS</a></li>
           </ul>
         </div>
-        {/* {/* <div className="hamburger-menu">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>*.} */}
-
       </div> 
     </header>
 

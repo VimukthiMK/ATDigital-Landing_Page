@@ -11,11 +11,12 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 14px;
-    letter-spacing: -0.02em;
+    letter-spacing:0;
     text-align: center;
 }
 
 .btn:hover{
     background-color: var(--sucess-color);
+    color: var(--text-color-light);
 
 }

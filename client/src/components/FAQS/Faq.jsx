@@ -6,7 +6,7 @@ const Faq = ({ sections }) => {
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index))  }
   return (
-    <div className='faqbutton-container'>
+    <section className='faqbutton-container'>
       {sections.map((section, index) => (
         <div key={index}>
           <button
@@ -20,6 +20,6 @@ const Faq = ({ sections }) => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   )}
 export default Faq
