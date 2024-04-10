@@ -3,14 +3,13 @@ import 'src/components/TopNavigation/topnavigation.css'
 
 
 const TopNavigation = () => {
-
   return (
     <header>
       <div className='navbar'>
-        <div className='navbar-logocontainer'>
+        <div className='navbar--logocontainer'>
           <img src={Logo} alt="app-logo" />
         </div>
-        <div className='navbar-navcontainer'>
+        <div className='navbar--navcontainer'>
           <ul className="nav-links">
             <li><a href="#service">SERVICES</a></li>
             <li><a href="#about">ABOUT US</a></li>
@@ -18,8 +17,15 @@ const TopNavigation = () => {
             <li><a href="#careers">CAREERS</a></li>
           </ul>
         </div>
-      </div>
+        {/* {/* <div className="hamburger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>*.} */}
+
+      </div> 
     </header>
+
   )
 }
 
