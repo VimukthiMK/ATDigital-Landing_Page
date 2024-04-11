@@ -3,8 +3,10 @@ import { useState } from 'react'
 
 const Faq = ({ sections }) => {
   const [activeIndex, setActiveIndex] = useState(null)
+
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index))  }
+
   return (
     <section className='faqbutton-container'>
       {sections.map((section, index) => (
@@ -12,6 +14,7 @@ const Faq = ({ sections }) => {
           <button
             className={`accordion ${activeIndex === index ? 'active' : ''}`}
             onClick={() => toggleAccordion(index)}
+            style={{ color: activeIndex === index ? 'var(--primary-color)' : 'black' }} // Change color based on active state
           >
             {section.title}
           </button>
