@@ -1,12 +1,14 @@
-import TopNavigation from 'src/components/TopNavigation/TopNavigation'
-import 'src/pages/landingpage.css'
-import HeroImg from 'src/assets/images/hero-banner.svg'
-import Service1 from 'src/assets/images/service-01.svg'
-import Service2 from 'src/assets/images/service-02.svg' 
+import TopNavigation from 'src/components/TopNavigation/TopNavigation' //Top navigation Component
 import Button from 'src/components/Button/Button'  //Button Component
-import Faq from 'src/components/FAQS/Faq' // Faq Section
-import Footer from 'src/components/Footer/Footer' //Footer Section
+import Faq from 'src/components/FAQS/Faq' // Faq Component
+import Footer from 'src/components/Footer/Footer' //Footer Component
+
+import HeroImg from 'src/assets/images/hero-banner.svg' //Hero Image
+import Service1 from 'src/assets/images/service-01.svg' //Service Image 1
+import Service2 from 'src/assets/images/service-02.svg'  //Service Image 2
+
 import landingPageData from 'src/data/landingPageData.json' // Import the JSON data
+import 'src/pages/landingpage.css'
 
 const LandingPage = () => {
   const { sections, heroContent, services } = landingPageData // Destructure the data
@@ -61,7 +63,7 @@ const LandingPage = () => {
             <img src={Service2} alt="service-2-img" />
           </div>
         </div>
-        
+
       </section>
 
       {/* FAQ Section */}

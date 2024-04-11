@@ -14,7 +14,7 @@ const Faq = ({ sections }) => {
           <button
             className={`accordion ${activeIndex === index ? 'active' : ''}`}
             onClick={() => toggleAccordion(index)}
-            style={{ color: activeIndex === index ? 'var(--primary-color)' : 'black' }} // Change color based on active state
+            style={{ color: activeIndex === index ? 'var(--primary-color)' : '#000000' }}
           >
             {section.title}
           </button>

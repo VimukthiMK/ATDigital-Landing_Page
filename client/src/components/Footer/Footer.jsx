@@ -1,7 +1,8 @@
 import 'src/components/Footer/footer.css'
-import Logo from 'src/assets/logo/at-digital-logo.svg'
+import Logo from 'src/assets/logo/at-digital-logo.svg'  //Logo
 
 const Footer = () => {
+
     return (
         <section className='footer'>
             {/* Navigation & company info */}
