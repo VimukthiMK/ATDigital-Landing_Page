@@ -1,11 +1,11 @@
 import Logo from 'src/assets/logo/at-digital-logo.svg'
-import 'src/components/TopNavigation/topnavigation.css'
-
+import './topnavigation.css' // CSS file
+import { slide as Menu } from 'react-burger-menu';
 
 const TopNavigation = () => {
 
   return (
-    <header>
+    <nav>
       {/* navigation Bar */}
       <div className='navbar'>
         {/* Logo */}
@@ -16,18 +16,22 @@ const TopNavigation = () => {
         <div className='navbar--navcontainer'>
           <ul className="nav-links">
             <li><a href="#service">SERVICES</a></li>
-            <li><a href="#about">ABOUT US</a></li>                                                                            
+            <li><a href="#about">ABOUT US</a></li>
             <li><a href="#contact">CONTACT US</a></li>
             <li><a href="#careers">CAREERS</a></li>
           </ul>
         </div>
-        <div className="hamburger-menu">
-          
+          {/* Hamburger-menu */}
+        <div className="hamburger-menu" id='hamburger-menu'>
+          <Menu right width={'100%'}>
+            <a id="home" className="menu-item" href="#service">SERVICES</a>
+            <a id="about" className="menu-item" href="#about">ABOUT US</a>
+            <a id="contact" className="menu-item" href="#contact">CONTACT US</a>
+            <a id="projects" className="menu-item" href="#careers">CAREERS</a>
+          </Menu>
         </div>
-
-      </div> 
-    </header>
-
+      </div>
+    </nav>
   )
 }
 
